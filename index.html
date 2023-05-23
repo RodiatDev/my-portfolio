@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navBar</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/569c28011e.css" crossorigin="anonymous">
+</head>
+
+<body>
+  <!----header section start----->
+  <div class="head-section">
+    <h1>RodiatDev</h1>
+    <div id="menu" class="fas fa-bars">
+    </div>
+    <header>
+      <div class="user">
+        <img src="pic/rodiat4-removebg-preview.png">
+        <h3 class="name">osuolale Rodiat</h3>
+        <p class="name">front end developer</p>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li list-inline-item><a href="#home">Home</a></li>
+          <li list-inline-item><a href="#About">About</a></li>
+          <li list-inline-item><a href="#service">Service</a></li>
+          <li list-inline-item><a href="#porfolio">porfolio</a></li>
+          <li list-inline-item><a href="#contact">contact</a></li>
+        </ul>
+    </header>
+  </div>
+    <!----header section end----->
+
+
+
+    <!----menubar section start----->
+    
+    <!----menubar section end----->
+
+<!----landing page ----->
+    <section class="home" id="home">
+      <h3>Hello world!</h3>
+      <h1>i'm<span> Osuolale Rodiat Yetunde</span></h1>
+      <p>I create all types of web based software and ensure great experience for web users.<br> I professionaly design,
+        redesign and continously support customer-facing and <br>enterprise web apps to achieve high conversion and
+        adoption rate.</p>
+        <a href="#About"><button class="btn">about me<i class="fas fa-user"></i></button></a>
+    </section>
+    <!---- end of landing page ----->
+
+
+
+    <!---- about page ----->
+    <section class="about" id="About">
+      <div class="main">
+        <img src="pic/rodiat4-removebg-preview.png">
+        <div class="about-text">
+          <h2 id="ABOUT">ABOUT ME</h2>
+          <h5 >Developer <span>and Designer</span></h5>
+          <p>I am a Web & Front-End Designer based in Osogbo Osun State Nigeria. I have been working as a web designer since 2016. I’ve always been someone who has both a creative and logical side. When I discovered web design in college, I realized it would be the perfect fit. I could use my creative side to design and my logical side to code. As a bonus, being both designer and developer allows me to make sure no details is lost in translation.</p>
+          <button type="sunmit" onclick="window.alert('kindly goto contact menu lets connect')">Lets Talk</button>
+        </div>
+      </div>
+    </section>
+     <!---- End of about page ----->
+
+
+      <!---- service page ----->
+    <section class="service" id="service">
+      <h1 class="heading">our <span>Service</span></h1>
+        <div class="header2">
+          <div class="row1">
+            <div class="paragraph-2">
+              <h1>Brand Experience</h1>
+              <p>We created brand identities. we're specialist in designing memorable brands that reside with the hearts and minds of your customers. </p>
+            </div>
+            <div class="paragraph-2">
+              <h1>service Experience</h1>
+              <p>We forge connections.our services aim to foster long lasting bonds between your organisation and your customers. </p>
+            </div>
+          </div>
+          <div class="row2">
+              <div class="paragraph-2">
+                <h1>user Experience</h1>
+                <p>We improve user experiences. our team is dedicaated to helping your customers receive the best user experience they possible can. </p>
+              </div>
+              <div class="paragraph-2">
+                <h1>customer Experience</h1>
+                <p>We drive customer engagement with the expertise of our specialists we support your customer experience. </p>
+              </div>
+            </div>
+        </div>
+        <div class="box">
+          <div class="card">
+            <h5>Website Development</h5>
+            <div class="para">
+              <p>
+                we help build tech solutions for small, medium, and large enterprises in Africa,
+                to enable them compete globally with other brands. Aside web development we create Ads for businesses, 
+                UI/UX design and CAC registration and lots more.
+              </p>
+            </div>
+            <a class="button"href="#contact">Book for service</a>
+          </div>
+          <div class="card">
+            <h5>Mentorship</h5>
+            <div class="para">
+              <p> Our website development certificate course will enhance you to learn important principles and design
+                techniques. </span></p>
+                <div class="para-image">
+                    <div class="para-image1">
+                        <img src="pic/html.jpg" alt="">
+                        <p> HTML</p>
+                    </div>
+                    <div class="para-image1">
+                        <img src="pic/css.jpg" alt="">
+                        <p> CSS</p>
+                    </div>
+                    <div class="para-image1">
+                        <img src="pic/js.jpg" alt="">
+                        <p> Java script</p>
+                    </div>
+                </div>
+            </div>
+            <a class="button"href="#contact">Enrol Now</a>
+        </div>
+          <div class="card">
+            <h5>Our certificate Course</h5>
+            <ul>
+              <li>Website Development</li>
+              <li>UI/UX Design</li>
+              <li>Digital Marketing</li>
+              <li>Copywritting</li>
+              <li>Human Resource Managment</li>
+            </ul>
+            <p id="pay">Course Fee:<span style="color:red;">&#8358;50,000</span>
+            </p>
+            <a class="button"href="#contact">Get 20% off Now</a>
+          </div>
+      </div><hr>
+    </section>
+     <!---- End of service page ----->
+
+      <!---- contact page ----->
+     <section class="contact service">
+        <h1 class="heading" id="contact">CONTACT</h1>
+        <div class="form"></div>
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <input type="text" id="name" placeholder="your name" required class="input-box">
+              <input type="email" id="email" placeholder="@gmail.com" required  class="input-box">
+              <input type="text" id="phone" placeholder="Mobile NO" required  class="input-box">
+              <label>message</label>
+                <textarea id="message" row="4" name="message" placeholder="">
+                </textarea>
+              <button type="submit">SEND</button>
+            </form>
+        </div>
+     </section><hr>
+      <!---- End of contact page ----->
+
+       <!----footer section ----->
+      <footer>
+        <div class="my-footer">
+          <p>for more website development, mentorship on <br> <span style="color:darkgoldenrod; border-radius: 5px; padding: 3px; font-size: 15px;">HTML, CSS and coding</span> <br> please contact me on social media</p>
+         <a href="https://web.facebook.com/rodiat.abdulrazaq.1"><i class="fa-brands fa-facebook"></i></a>
+         <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+         <a href="https://instagram.com/itz_uniqrodiat?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-square-instagram"></i></a>
+         <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+          <h6>&copy;RodiatDev2023</h6>
+        </div>
+      </footer>
+       <!---- End of footer page ----->
+  </div>
+
+ <!----jquery cdn link----->
+ 
+ <script src="https://kit.fontawesome.com/569c28011e.js" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ <script src="js/style.js"></script>
+ <script src=" https://smtpjs.com/v3/smtp.js"></script>
+ <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+ <script>
+  function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "osuolalerodiatyetunde@gmail.com",
+        Password : "comnd241",
+        To : 'osuolalerodiatyetunde@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "new contact",
+        Body : "And this is the body"
+    }).then(
+      message => alert('message sent')
+    );
+}
+ </script>
+</body>
+
+</html>
